@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+    <table style=" width: 96%; border-collapse: collapse;">					
+        <tr>				
+            <td style="background-color: #224363; padding: 2%;">
+                <table>	
+                    <tr>
+                        <div style="text-align:center; background-color: #224363;"> 
+                            <video id="video" width="100%" style="padding-top: 0%;">
+                            <source src="../Video/video_canta.mp4" type="video/mp4">
+                            </video>
+                            <br><br>
+                            <button style="width: 20%; padding: 1%; font-size: 100%;" onclick="luajNdal()">Luaj/Ndal</button> 																				
+                        </div>
+                    </tr>
+                                
+                </table>
+            </td>
+        </tr>								
+    </table>
+
+    <script> 
+    var myVideo = document.getElementById("video"); 
+    function luajNdal() { 
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+        } 			  
+    </script>
+
+</body> 
+</html>

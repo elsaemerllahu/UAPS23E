@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+            @import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+			
+			.container {
+		        background-color:#1a354f;
+			    width: 100%;
+			    font-family: Helvetica, Arial, sans-serif;
+			}
+		
+
+			header {
+			    background-color:#1a354f;
+				color:#9ab;
+				text-align:center;
+				padding:1%;	
+                font-family: Helvetica, Arial, sans-serif; 
+			}
+
+			section {
+				background-color: #1a354f; 
+			 	line-height:130%;
+				width:100%;
+				float:right;
+				padding-left:0%;
+				padding-top: 0%;
+
+			}
+			footer {
+				background-color:#36587b;
+				color: #adc0d3;
+				clear:both;
+				text-align:center;
+				padding:2%;
+
+			}
+			 
+			td{
+			    background-color: #ffffff;
+
+			}
+        
+            nav {
+                color: #eee;
+                font-family: 'Lato', sans-serif;
+                font-size: 62.5%;
+                padding: 0 20px;
+                box-sizing: border-box;
+
+            }
+
+            code {
+                background: #fff1;
+                font-family: 'Inconsolata', monospace;
+                padding: .2em .4em;
+            }
+
+            .links {
+                background-color: #123;
+                background-image: linear-gradient(to bottom, #0003, transparent);
+                border-bottom: 1px solid #0003;
+                box-shadow: 0 0 32px #0003;
+                font-size: 2em;
+                font-weight: 300;
+            }
+            .links > a {
+                color: #9ab;
+                font-size: 80%;
+                padding: .75em;
+                text-align: center;
+                text-decoration: none;
+                transition: all .5s;
+            }
+            .links > a:hover {
+                background: #ffffff06;
+                color: #adf;
+            }
+            .links > .line {
+                background: #68a;
+                height: 1px;
+                pointer-events: none;
+            }
+        
+            .links {
+                display: grid;
+                grid-template-columns: repeat(var(--items), 1fr);
+                position: relative;
+            }
+            .links > .line {
+                opacity: 0;
+                transition: all .5s;
+                position: absolute;
+                bottom: 0;
+                left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+                width: var(--width, calc(100% / var(--items)));
+                --index: 0;
+            }
+            .links > a:hover ~ .line {
+                opacity: 1;
+            }
+            
+            .links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+            .links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+            .links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+            .links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+            .links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+            .links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+
+            .links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+
+		</style>
+	</head>
+	<body>
+        
+		<div class="container">
+			<header id="ballina">
+			<h1>Uebsite per Artikuj te Personalizuar sipas Sektoreve</h1>
+
+			<svg height="50" width="200">
+				<text x="50" y="15" fill="#9ab" style="font-size: 130%;">(UAPS)</text>
+			</svg>
+
+			</header>
+
+
+			<nav class="links" style="--items: 3;" id="nav">
+			
+                <a href="#ballina">Ballina</a>
+                <a href="#artikuj">Artikuj</a>
+                <a href="#kontakti">Kontakti</a>
+                
+                <span class="line"></span>
+
+			</nav>
+			<article>
+				<img src="Foto/foto1.png" style="width:100%; margin-left: 0%;">
+			</article>
+			
+			<section id="artikuj" style="background-color:#1a354f ; " >
+				
+				<table style="border-collapse: collapse; ">
+						<td style="background-color: #1a354f; width: 10%; ">
+						<h1 style="text-align: center; font-size: 200%; color: #9ab;">G<br><br>o<br><br>t<br><br>a</h1>
+						</td>
+						
+						<td>
+							<div style="background-color:rgb(255, 255, 255); padding:5%; color: #1a354f; "> 
+								<table>	
+									<tr>
+									<td style="width:100%;">	
+									<img src="Foto/gota1.png" style="width:100%;">
+									</td>
+									</tr>
+									<td style="background-color: #ffffff; padding-right: 5%; text-align: center;">
+									<p>Gote me tekst<br>Cmimi: 6€<br>Sasia: 25 cope</p></td>	
+															
+								</table>
+							</div> 
+						</td>
+						
+						<td style="background-color: #1a354f;">
+						&nbsp 
+						</td>
+						
+						<td>
+							<div style="background-color:rgb(255, 255, 255); color:black; padding:5%; color: #1a354f;">
+								<table>	
+									<tr>
+									<td style="width:100%;">
+									<img src="Foto/gota2.png" style="width:100%;">
+									<td style="width:50%;"></td>
+									</td>									
+									</tr>
+
+									<td style="background-color: #ffffff; padding-right: 5%; text-align: center;">
+									<p>Gote me figura<br>Cmimi: 6€<br>Sasia: 25 cope</p>
+									</td>	
+								</table>
+							</div>
+						</td>
+						
+						<td style="background-color: #1a354f;">
+						&nbsp 
+						</td>
+						
+						<td>
+							<div style="background-color:rgb(255, 255, 255); color:black; padding:5%; "> 
+								<table>	
+									<tr>
+										<td style="width:100%;">
+										<img src="Foto/gota3.png" style="width:100%;">
+										</td>
+									</tr>
+									<td style="background-color: #fefefe; padding-left:30%; padding-top: 5%; padding-bottom: 5%;">
+									<button style="width:60%; height:55px; font-size: 90%;">Personalizo<br>tenden</button>
+									</td>		
+								</table>
+							</div> 
+						</td>
+						<td style="background-color: #1a354f; width: 10%;">
+						</td>	
+					</tr>
+				</table>	
+            	
+				<table style="border-collapse: collapse;">
+					<tr>
+						<td style="background-color: #1a354f ;">
+						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+						</td>
+					</tr>
+					<tr>
+						<td style="background-color: #1a354f; width: 10%;">
+						<h1 style="text-align: center; font-size: 200%;color: #9ab;">C<br><br>a<br><br>n<br><br>t<br><br>a</h1>						
+						</td>
+						<td>
+							<div style="background-color:#ffffff; padding:6%; color: #1a354f; ">								
+								<table>	
+									<tr>
+										<td style="width:100%;">
+										<img src="Foto/canta1.png" style="width:90%; padding-left: 5%;">
+										</td>
+									</tr>	
+									<td style="background-color: #ffffff; padding-right: 5%; text-align: center;">
+									<p>Cante me tekst<br>Cmimi: 12€<br>Sasia: 25 cope</p></td>												
+								</table>	
+							</div> 
+
+							<td style="background-color: #1a354f;">
+							&nbsp 
+							</td>
+						</td>
+						<td>
+
+							<div style="background-color:#ffffff; padding:5%; ">
+								<table>	
+									<tr>
+										<td style="width:100%;">
+										<img src="Foto/canta2.png" style="width:90%; padding-left: 5%;">
+										<td style="width:50%;"></td>
+										</td>
+											
+										<td style="background-color:#ffffff;">
+											&nbsp &nbsp &nbsp &nbsp &nbsp 
+											</td>	
+									</tr>
+									<td style="background-color: #ffffff; padding-right: 5%; text-align: center;">
+									<p>Cante me figura<br>Cmimi: 12€<br>Sasia: 20 cope</p>
+									</td>		
+								</table>
+							</div>
+						<td style="background-color: #1a354f;">
+						&nbsp 
+						</td>
+
+						</td>
+                    <td>
+                        <div style="background-color:#ffffff;  padding:5%; ">
+                            <table>	
+								<tr>
+									<td style="width:99%;">
+									<img src="Foto/canta3.png" style="width:85%; padding-left: 10% ;">
+									</td>
+									<td style="width:50%;">
+												
+									</td>
+								</tr>	
+								<td style="background-color: #fefefe; padding-left:30%; padding-top: 5%; padding-bottom: 5%;">
+								<button style="width:60%; height:55px; font-size: 90%;">Personalizo<br>tenden</button>
+								</td>							
+                            </table>
+                        </div> 
+						<td style=" width: 10%; background-color: #1a354f ;">
+
+						</td>
+					</td>
+                	</tr>
+
+					<tr>
+						<td style="background-color: #1a354f ; ">
+						&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+						</td>
+					</tr>
+					
+            	</table>
+
+				<table style=" width: 96%; border-collapse: collapse;">					
+					<tr>
+						<td style="background-color: #1a354f; width: 10%; ">						
+						</td>
+
+						<td style="background-color:#1a354f ;">
+						&nbsp 
+						</td>						
+						<td style="background-color: #224363; padding: 2%;">
+							<table>	
+								<tr>
+									<div style="text-align:center; background-color: #224363;"> 
+										<video id="video" width="100%" style="padding-top: 0%;">
+										<source src="Video/video_canta.mp4" type="video/mp4">
+										</video>
+										<br><br>
+										<button style="width: 20%; padding: 1%; font-size: 100%;" onclick="luajNdal()">Luaj/Ndal</button> 																				
+									</div>
+								</tr>
+											
+							</table>
+						<td style="background-color: #1a354f; width: 6%;">
+						</td>
+						</td>	
+					</tr>								
+				</table>
+			
+				<script> 
+				var myVideo = document.getElementById("video"); 
+				function luajNdal() { 
+					if (myVideo.paused) 
+						myVideo.play(); 
+					else 
+						myVideo.pause(); 
+					} 			  
+				</script>
+				<table style=" width: 97%; border-collapse: collapse;">
+					<br>
+					<tr>					
+						<td style="background-color: #1a354f; width: 10%; ">
+						</td>						
+						<td style="background-color: #224363; padding: 2%;">
+							<table>	
+								<tr>
+								<div style="text-align:center; background-color: #224363;"> 
+									<iframe width="100%" height="500" src="https://www.youtube.com/embed/GiRXlBbgmWw"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								</tr>
+									
+																		
+							</table>
+						</td>
+						<td style="background-color: #1a354f; width: 7%;">
+						</td>	
+					</tr>
+				</table>
+			</section>
+			<section id="kontakti" >
+
+				<table style="margin: 6%;">
+					<tr>
+						<td style=" width: 8%; background-color: #1a354f ;border-collapse: collapse;"></td>
+						<td style="width:65%; background-color: #f4f4f4;">
+							<form action="#" method="post" style="margin-left:20%; margin-top:0;">
+								<h4 style="margin: 0px; width: 70%; height: 50%; color: #123;"> Forma per kontakt</h4>
+								<hr>
+								  <input type="text" name="firstname" placeholder="Subjekti" 
+								  style="margin: 0px; width: 70%; height: 70%;">
+								  <br>
+								 <br>
+								  <input type="text" name="lastname" placeholder="Emaili" 
+								  style="margin: 0px; width: 70%; height: 70%;">
+								  <br><br>
+								  
+								  <textarea id="message" name="message" width="20%" height="60%" 
+								  style="margin: 0px; width: 70%; height: 70%;">
+									
+								  </textarea>
+									<br><br>
+								  <input type="submit" name="add" value="Dergo">
+								
+							</form> 						
+						</td>
+						<td>										
+							<div class="mapouter"><div class="gmap_canvas">
+							<iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Prizma%20Color,%20Mergimtaret%20e,%20XK,%20Gjilan%2060000&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+							<a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+							<style>.gmap_canvas {overflow:hidden;background:none!important;height:520px;width:600px;}</style></div></div>						
+							<br>
+						</td>
+						<td style=" width: 6%; background-color: #1a354f ;"></td>
+					</tr>
+				</table>
+			<footer>
+			Copyright &#169   UAPS <br>
+				<ul>
+					Referencat: <a href="https://www.istockphoto.com/photos/empty-coffee-cup">   FotoG</a> |
+					<a href="https://www.amazon.com/Blank-Cotton-Tote-Bags-Reusable/dp/B00QDP9YVC" >FotoC</a> | 
+					<a href="https://www.canva.com/" style="padding-right: 2%;">Elemente</a>
+					<br>
+					<a href="https://youtu.be/PYJtcbwjE2g" >VideoC</a> |
+					<a href="https://youtu.be/GiRXlBbgmWw" >VideoG</a> | <a href="https://codepen.io/RockStarwind/pen/WmGwwp" style="padding-right:2%">Menya</a>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>
